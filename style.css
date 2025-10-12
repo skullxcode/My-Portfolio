@@ -168,21 +168,8 @@ nav{
     background-color: #FFFDF2;
     color: black;
 }
-@keyframes expand-code-box {
-    to { height: 100px; } 
-}
-
-@keyframes hide-loading-text {
-    0% { opacity: 1; height: 1.5em; }
-    99% { opacity: 0; height: 1.5em; }
-    100% { opacity: 0; height: 0; margin: 0; padding: 0; }
-}
-
-@keyframes reveal-code-lines {
-    to { opacity: 1; }
-}
 #code {
-
+    width: 80%;
     border: solid #272a36;
     background-color: #272a36;
     border-radius: 10px;
@@ -199,20 +186,7 @@ nav{
     vertical-align: middle;
     overflow-y: scroll;
     overflow-x: hidden;
-}
-#code::before {
-    content: "Loading..."; 
-    color: white;
-    display: block;
-    line-height: 1.5; 
-    height: 1.5em;
-    animation: hide-loading-text 0.01s forwards; 
-    animation-delay: 2s;
-}
-#code-lines-wrapper {
-    opacity: 0; 
-    animation: reveal-code-lines 0.5s forwards;
-    animation-delay: 2.2s; /
+    height: 100px;
 }
 .new-text {
     display: block; 
@@ -257,10 +231,10 @@ nav{
 }
 
 #about-code-container code {
-    font-family: 'Fira Code', monospace; /* Ensures the code font is used */
+    font-family: 'Fira Code', monospace;
     font-size: 1rem;
     line-height: 1.6;
-    color: #f8f8f2; /* Default light text */
+    color: #f8f8f2;
 }
 
 /* --- Syntax Highlighting --- */
@@ -286,4 +260,157 @@ nav{
 
 #about-code-container .string {
     color: #f1fa8c;
+}
+#skills{
+    margin-bottom: 16vh;
+}
+.card{
+    border: solid #e0e0e0;
+    border-radius: 10px;
+    display: inline-block;
+    width: 25vw;
+    text-align: center;
+    padding: 2vw;
+    margin-left: 2.5vw;
+}
+.card>h3{
+    text-align: center;
+}
+svg{
+    margin: 1.5vw;
+    width: 4vw;
+    height: 4vw;
+}
+#project{
+    margin-bottom: 16vh;
+    text-align: center;
+}
+.project-card{
+    border: solid #e0e0e0;
+    border-radius: 10px;
+    width: 35vw;
+    text-align: center;
+    padding: 2vw;
+    margin: auto;
+    margin-bottom: 16vh;
+}
+.project-card>a{
+    text-decoration: none;
+}
+.project-card>a>div{
+    border: solid black;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+}
+.project-card>a>div>img{
+    width: 100%;
+    border-bottom: solid black;
+}
+#experience{
+    margin-bottom: 16vh;  
+    text-align: center;
+}
+.ex-card{
+    vertical-align: middle;
+    display: inline-block;
+    border: solid #e0e0e0;
+    border-radius: 10px;
+    margin: auto;
+    width: 40%;
+    height: 100%;
+}
+.ex-card>img{
+    display: block;
+    margin: auto;
+    margin-bottom: 4vh;
+}
+#github-cal{
+    width: 60%;
+}
+#cf{
+    width: 30%;
+}
+#contact{
+    margin: auto;
+}
+#contact-head{
+    text-align: center;
+}
+.contact-card{
+    margin-left: 10vw;
+    vertical-align: middle;
+    text-decoration: none;
+    margin: auto;
+    border-radius: 10px;
+    width: 40%;
+    padding: 2vw;
+    display: inline-block;
+}
+.contact-icon{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 3vh;
+}
+.contact-icon>img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.contact-icon>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.contact-icon>div>p:nth-of-type(1){
+    font-size: 1vw;
+    margin: 0;
+}
+.contact-icon>div>p:nth-of-type(2){
+    font-size: 0.8vw;
+    margin: 0;
+}
+form{
+    border: solid #e0e0e0;
+    vertical-align: middle;
+    border-radius: 10px;
+    padding: 2vw;
+}
+label{
+    display: block;
+    margin-bottom: 1vh;
+}
+input{
+    height: 4vh;
+    background-color: #fffdf2;
+    width: 97%;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    font-size: 2vh;
+    padding-left: 2vh;
+    margin-bottom: 3vh;
+}
+textarea{
+    background-color: #fffdf2;
+    width: 97%;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    font-size: 2vh;
+    padding-left: 2vh;
+    margin-bottom: 3vh;
+    padding-top: 1vh;
+}
+button{
+    height: 6vh;
+    background-color: #51fa7a;
+    width: 101%;
+    border-radius: 10px;
+    border: 2px solid #51fa7a;
+    font-size: 2vh;
+}
+footer{
+    text-align: center;
+    font-size: 1.5vh;
+}
+hr{
+    width: 60%;
 }
