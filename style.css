@@ -329,8 +329,14 @@ svg{
 #github-cal{
     width: 60%;
 }
+#github-cal>script{
+    width: 80%;
+}
 #cf{
     width: 30%;
+}
+#cf>img{
+    width: 80%;
 }
 #contact{
     margin: auto;
