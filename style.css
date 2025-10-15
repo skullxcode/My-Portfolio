@@ -157,11 +157,12 @@ nav{
     background-color: black;
     padding: 1%;
     text-decoration: none;
-    font-size: 130%;
+    font-size: 1.3rem;
     font-weight: 900;
     color: white;
     width: 12vw;
     vertical-align: middle;
+    overflow: scroll;
 }
 #connect-button:active{
     transition: 0.5s;
@@ -320,6 +321,7 @@ svg{
     margin: auto;
     width: 40%;
     height: 100%;
+    margin-bottom: 5%;
 }
 .ex-card>img{
     display: block;
@@ -327,6 +329,7 @@ svg{
     margin-bottom: 4vh;
 }
 #github-cal{
+    padding: 5%;
     width: 60%;
 }
 #github-cal>script{
