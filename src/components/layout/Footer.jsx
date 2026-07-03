@@ -14,7 +14,7 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <a href="mailto:ujjwaljain146@gmail.com" className="text-headline-md md:text-display-lg font-headline-md md:font-display-lg text-surface break-all md:text-right hover:opacity-80 transition-opacity cursor-pointer block">
+        <a href="mailto:ujjwaljain146@gmail.com" className="text-body-lg md:text-headline-lg font-body-lg md:font-headline-lg text-surface break-all md:text-right hover:opacity-80 transition-opacity cursor-pointer block">
           ujjwaljain146@gmail.com
         </a>
       </div>
